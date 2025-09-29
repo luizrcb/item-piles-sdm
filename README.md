@@ -16,6 +16,16 @@ This is a module that enables the SDM Foundry system to have compatibility with 
 
 Simply install this alongside Item Piles. Once installed and activated it will provide Item Piles with the configuration it needs to work properly in the SDM system.
 
+## Installation
+
+You can use one of the following installation methods:
+
+1. Pasting the following url into the **Install Module** dialog on the Setup menu of the application.
+##
+    https://github.com/luizrcb/item-piles-sdm/releases/latest/download/module.json
+1. Browsing the repository's [Releases](https://github.com/luizrcb/item-piles-sdm/releases) page, where you can copy any module.json link for use in the Install Module dialog.
+2. Downloading one of the .zip archives from the Releases page and extracting it into your foundry Data folder, under `Data/modules/item-piles-sdm`.
+
 ## Licenses
 
 - **Source Code:** All source code files (javascript, css) are licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
