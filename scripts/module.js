@@ -1,7 +1,138 @@
-Hooks.once('init', async function() {
+Hooks.once("item-piles-ready", async () => {
+  const config = {
+    VERSION: "0.4.0",
+    CURRENCIES: [
+      {
+        id: "Ag3Y82vRzeqEEAel",
+        type: "item",
+        name: game.settings.get("sdm", "currencyName"),
+        img: game.settings.get("sdm", "currencyImage"),
+        abbreviation: "€{#}",
+        data: {
+          item: {
+            name: game.settings.get("sdm", "currencyName"),
+            type: "gear",
+            img: game.settings.get("sdm", "currencyImage"),
+            system: {
+              size: {
+                unit: "cash",
+                value: 1,
+              },
+              quantity: 1,
+              readied: false,
+              status: "",
+              resources: "",
+              cost: 0,
+              cost_frequency: "",
+              description: "",
+              features: "",
+              attributes: {
+                initiative: "",
+                level: 0,
+                life: {
+                  value: 1,
+                  max: 1,
+                },
+                morale: 2,
+                defense: 7,
+                bonus: 1,
+                damage: "1d4",
+              },
+              is_hallmark: false,
+              hallmark: {
+                level: 0,
+                experience: "0",
+              },
+              type: "",
+              starting_kit: false,
+              is_supply: false,
+              supply_type: "human",
+              packed_remaining_items: 10,
+              power: {
+                img: "icons/svg/book.svg",
+                name: "",
+                description: "",
+                level: 1,
+                range: "",
+                target: "",
+                duration: "",
+                overcharge: "",
+                roll_formula: "",
+                overcharge_roll_formula: "",
+              },
+              powers_current_index: 0,
+              max_powers: 3,
+              powers: [],
+              armor: {
+                value: 0,
+                type: "",
+                cumbersome: false,
+                powered: null,
+              },
+              ward: {
+                value: 0,
+                type: "",
+                armor: 0,
+              },
+              weapon: {
+                damage: {
+                  base: "1d4",
+                  versatile: "1d4",
+                  bonus: "",
+                },
+                range: "",
+                versatile: false,
+              },
+            },
+            effects: [],
+            folder: null,
+            ownership: {
+              default: 0,
+              QPXPKtHeyoYXpZFF: 3,
+            },
+            flags: {},
+            _stats: {
+              compendiumSource: null,
+              duplicateSource: null,
+              exportSource: null,
+              coreVersion: "13.348",
+              systemId: "sdm",
+              systemVersion: "0.3.3",
+              createdTime: 1759091458980,
+              modifiedTime: 1759091458980,
+              lastModifiedBy: "QPXPKtHeyoYXpZFF",
+            },
+            _id: "gau5ozeVNr8VFIKw",
+            sort: 0,
+          },
+        },
+        primary: true,
+        exchangeRate: 1,
+        secondary: false,
+      },
+    ],
+    SECONDARY_CURRENCIES: [],
+    CURRENCY_DECIMAL_DIGITS: 0,
+    ITEM_FILTERS: [
+      {
+        path: "type",
+        filters: "trait",
+      },
+      {
+        path: "type",
+        filters: "burden",
+      },
+    ],
+    ITEM_SIMILARITIES: ["name", "type", "system.type", "system.size.unit"],
+    UNSTACKABLE_ITEM_TYPES: [],
+    ACTOR_CLASS_TYPE: "npc",
+    ITEM_CLASS_LOOT_TYPE: "gear",
+    ITEM_CLASS_WEAPON_TYPE: "gear",
+    ITEM_CLASS_EQUIPMENT_TYPE: "gear",
+    ITEM_QUANTITY_ATTRIBUTE: "system.quantity",
+    ITEM_PRICE_ATTRIBUTE: "system.cost",
+    QUANTITY_FOR_PRICE_ATTRIBUTE: "flags.item-piles.system.quantityForPrice",
+  };
 
-});
-
-Hooks.once('ready', async function() {
-
+  game.itempiles.API.addSystemIntegration(config, "latest");
 });

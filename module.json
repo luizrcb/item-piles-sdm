@@ -1,25 +1,43 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
+  "id": "item-piles-sdm",
+  "title": "Item Piles: SDM",
+  "description": "This module adds support for the Synthetic Dream Machine system within the Item Piles module",
   "version": "#{VERSION}#",
   "library": "false",
-  "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": 10,
-    "verified": 10,
-    "maximum": 11
+    "minimum": "13",
+    "verified": "13"
   },
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Luber",
+      "discord": "nightlybuild_",
+      "email": "luizrcb@gmail.com",
+      "url": "https://foundryvtt.com/community/luizbertoni"
     }
   ],
   "relationships": {
-    "systems": [],
-    "requires": []
+    "requires": [
+      {
+        "id": "item-piles",
+        "type": "module",
+        "manifest": "https://github.com/fantasycalendar/FoundryVTT-ItemPiles/releases/latest/download/manifest.json",
+        "compatibility": {
+          "minimum": "3.2.27",
+          "verified": "3.2.27"
+        }
+      }
+    ],
+    "systems": [
+      {
+        "id": "sdm",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.3.3",
+          "verified": "0.3.4"
+        }
+      }
+    ]
   },
   "esmodules": [
     "scripts/module.js"
@@ -41,11 +59,5 @@
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
   "license": "LICENSE",
-  "readme": "README.md",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+  "readme": "README.md"
 }
