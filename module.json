@@ -58,6 +58,10 @@
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
+  "bugs": "https://github.com/luizrcb/item-piles-sdm/issues",
+  "flags": {
+    "allowBugReporter": true
+  },
   "license": "LICENSE",
   "readme": "README.md"
 }
