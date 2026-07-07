@@ -6,13 +6,13 @@
 <!--- replace <your-module-name> with the `name` in your manifest -->
 <!--- ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F<your-module-name>&colorB=4aa94a) -->
 
-# FoundryVTT Item Piles: Synthetic Dream Machine
+# FoundryVTT Item Piles: When Time Fades
 
 ![](https://img.shields.io/badge/Foundry-v13-informational) [![Report Bugs](https://img.shields.io/badge/Report%20Bugs%20on%20GitHub-2dba4e?logo=GitHub&amp;logoColor=white)](https://github.com/luizrcb/disposition-initiative/issues)
 
 ## Overview
 
-This is a module that enables the SDM Foundry system to have compatibility with [Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles).
+This is a module that enables the WTF Foundry system to have compatibility with [Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles).
 
 Simply install this alongside Item Piles. Once installed and activated it will provide Item Piles with the configuration it needs to work properly in the SDM system.
 

@@ -1,7 +1,7 @@
 {
   "id": "item-piles-sdm",
-  "title": "Item Piles: SDM",
-  "description": "This module adds support for the Synthetic Dream Machine system within the Item Piles module",
+  "title": "Item Piles: WTF",
+  "description": "This module adds support for the When Time Fades system within the Item Piles module",
   "version": "#{VERSION}#",
   "library": "false",
   "compatibility": {
